@@ -14,11 +14,11 @@ master$ docker run --rm --network="host" -p 6379:6379 redis
 
 #### Agora alterem o arquivo `redis_worker` para apontar o serviço redis da sua máquina (processo master)
 ```
-worker$ python redis_worker.rb
+worker$ python redis_worker.py
 ```
 
 #### E por fim, rodem o processo master em sua máquina
 ```
-master$ python redis_master.rb
+master$ python redis_master.py
 ```
 
