@@ -1,7 +1,7 @@
 from redis import Redis
 from rq import Worker, Queue, Connection
 
-listen = ['my_queue']
+listen = ['fila_de_soma', 'subtracao']
 
 if __name__ == '__main__':
   redis_conn = Redis(host='127.0.0.1',port=6379)
